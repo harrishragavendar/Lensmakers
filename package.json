@@ -1,0 +1,24 @@
+{
+  "name": "lensmakers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd backend && npm install  && npm run build && cd ../frontend && npm install && npm run build",
+    "start": "node backend/build/index.js",
+    "test": "echo \"Error: NO test specified.\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrishragavendar/lensmakers.git"
+  },
+  "author": "Harrish Ragavendar S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrishragavendar/lensmakers/issues"
+  },
+  "homepage": "https://github.com/harrishragavendar/lensmakers#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
