@@ -7,6 +7,7 @@
     "build": "cd backend && npm install --force  && npm run build && cd ../frontend && npm install --force && npm run build",
     "start": "node backend/build/index.js",
     "test": "echo \"Error: NO test specified.\" && exit 1"
+    
   },
   "repository": {
     "type": "git",
