@@ -83,7 +83,7 @@
           <mat-menu #menu="matMenu">
             <a mat-menu-item routerLink="profile">Profile</a>
             <a mat-menu-item routerLink="order-history">Order Hisotry</a>
-            <a *ngIf="currentUser" mat-menu-item routerLink="admin/dashboard">Admin</a>
+            <a *ngIf="adminUser" mat-menu-item routerLink="admin/dashboard">Admin</a>
             <button *ngIf="currentUser" mat-menu-item (click)="logout()">
               Logout
             </button>

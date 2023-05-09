@@ -7,18 +7,17 @@
     "build": "cd backend && npm install --force  && npm run build && cd ../frontend && npm install --force && npm run build",
     "start": "node backend/build/index.js",
     "test": "echo \"Error: NO test specified.\" && exit 1"
-    
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/harrishragavendar/lensmakers.git"
+    "url": "git+https://github.com/harrishragavendar/Lensmakers.git"
   },
   "author": "Harrish Ragavendar S",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/harrishragavendar/lensmakers/issues"
+    "url": "https://github.com/harrishragavendar/Lensmakers/issues"
   },
-  "homepage": "https://github.com/harrishragavendar/lensmakers#readme",
+  "homepage": "https://github.com/harrishragavendar/Lensmakers#readme",
   "dependencies": {
     "bootstrap": "^5.2.3"
   }

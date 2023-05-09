@@ -33,6 +33,7 @@
               type="password"
               placeholder="Password"
               formControlName="password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
               required
             />
             <mat-error> Please provide a strong password! </mat-error>
@@ -45,6 +46,7 @@
               type="password"
               placeholder="Confirm Password"
               formControlName="repeatPassword"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
               required
             />
             <mat-error> Password and Confirm Password doesn't match! </mat-error>

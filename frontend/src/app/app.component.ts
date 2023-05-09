@@ -20,6 +20,7 @@ export class AppComponent {
   title = 'Lensmakers - Your one stop destination for all kinds of eyewear';
   itemsCount: number = 0;
   currentUser: UserInfo | null = null;
+  adminUser: boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -33,8 +34,8 @@ export class AppComponent {
     });
   }
   ngOnInit() {
-
     this.authService.currentUser.subscribe((x) => (this.currentUser = x));
+    this.authService.currentUser.subscribe((x) => (this.adminUser = x?.isAdmin || false));
     this.cartService.currentCart.subscribe(
       (x) => (this.itemsCount = x.itemsCount)
     );
