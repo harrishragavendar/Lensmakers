@@ -28,7 +28,6 @@ export class LoginComponent implements OnInit {
     if (this.authService.currentUserValue) {
       this.router.navigate(['/']);
     }
-
     this.form = this.formBuilder.group({
       email: ['', Validators.email],
       password: ['', Validators.required],
@@ -51,7 +50,12 @@ export class LoginComponent implements OnInit {
       .pipe(first())
       .subscribe(
         (data) => {
-          this.router.navigate([this.returnUrl]);
+          if(this.authService.currentUserValue?.isAdmin) {
+            this.router.navigate([this.returnUrl + '/admin/dashboard/']);
+          }
+          else {
+            this.router.navigate([this.returnUrl]);
+          }
         },
         (error) => {
           this.snackBar.open(error, '', { panelClass: 'error-snackbar' });
